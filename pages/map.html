@@ -406,7 +406,9 @@
         body .speech-bubble .result4{
           display: none;
         }
-
+        body .speech-bubble .result5{
+          display: none;
+        }
 
         code {
             background: hsl(220, 80%, 90%);
@@ -431,8 +433,12 @@ word-       wrap: normal;
       <img src="../img/ME.png" alt="">
 
   </div>
+
+  <div class="speech-bubble result5" style="padding-top:30px;" >
+      <div class="intro" >I participate in the Cultural Music Society, amulticultural organization that plays music for university and community events. We played for <a href="http://ocm.auburn.edu/newsroom/news_articles/2016/01/arun-gandhi-to-speak-on-nonviolence-feb.-9-as-part-of-auburn-universitys-year-of-india.htm">Arun Gandhi</a>, at his Nonviolence in a Violent World public lecture. </div>
+  </div>
   <div class="speech-bubble result4" style="padding-top:30px;" >
-      <div class="intro" >I worked many jobs thoughout my college career, including McDonalds(2011-14), Home Depot(2014-15), Fuji Sushi Bar(2015-17), Round House Start-Up Incubator(2016), and Brewbakers(2011-13s).</div>
+      <div class="intro" >I worked many jobs thoughout my college career, including McDonalds(2011-14), Home Depot(2014-15), Fuji Sushi Bar(2015-17), Round House Start-Up Incubator(2016), and Brewbakers(2011-13).</div>
       <button class="result4 button4" style="">Continue</button>
   </div>
   <div class="speech-bubble result3" style="padding-top:30px;" >
@@ -545,6 +551,11 @@ word-       wrap: normal;
             $('.button3').click(function() {
               $('.result3').hide();
               $('.result4').fadeIn(300, function() {
+              })
+            });
+            $('.button4').click(function() {
+              $('.result4').hide();
+              $('.result5').fadeIn(300, function() {
               })
             });
 
