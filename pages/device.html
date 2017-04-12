@@ -1,0 +1,212 @@
+<html class=""><head><script src="//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js"></script><script src="//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js"></script><script src="//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js"></script><meta charset="UTF-8"><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111"><link rel="canonical" href="https://codepen.io/mohamedabusrea/pen/XMREve">
+
+
+<style class="cp-pen-styles">/**************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  overflow: hidden;
+}
+
+.color-dark {
+  background-color: #646464;
+}
+
+.container {
+  /*height: 100vh;*/
+  height: 300px;
+  width: 300px;
+  margin: 150px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.device {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.device__body {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  width: 0;
+  border: 0.5625rem solid #646464;
+  border-radius: 1.25rem;
+}
+.device__top {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -0.5625rem -0.5625rem 0;
+  border: 0.5625rem solid #646464;
+  border-radius: 1.25rem;
+}
+.device__dot {
+  width: 0.8125rem;
+  height: 0.6875rem;
+  border-radius: 0.3125rem;
+  background-color: #646464;
+  margin-top: 0.875rem;
+  margin-left: 0.875rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.device__bottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.1875rem;
+  overflow: hidden;
+}
+.device__button {
+  position: absolute;
+  top: calc(50% - 0.6875rem/2);
+  right: calc(50% - 1rem/2);
+  margin: 0 auto;
+  width: 0.9375rem;
+  height: 0.6875rem;
+  background-color: #646464;
+  border-radius: 1.25rem;
+}
+.device__stand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.8125rem;
+  overflow: hidden;
+}
+.device__partOne {
+  width: 0.5625rem;
+  height: 1.4375rem;
+  background-color: #646464;
+  -webkit-transform: translateY(2.1875rem);
+          transform: translateY(2.1875rem);
+}
+.device__partTwo {
+  width: 8.5rem;
+  height: 0.625rem;
+  border-radius: 0.3125rem;
+  background-color: #646464;
+  width: 0;
+}
+</style></head><body>
+<div class="container">
+    <div class="device">
+        <div class="device__body" style="width: 0px; flex-basis: 0px;">
+            <div class="device__top">
+                <div class="device__dot" style="transform: matrix(0, 0, 0, 0, 0, 0);"></div>
+                <div class="device__dot" style="transform: matrix(0, 0, 0, 0, 0, 0);"></div>
+                <div class="device__dot" style="transform: matrix(0, 0, 0, 0, 0, 0);"></div>
+            </div>
+            <div class="device__bottom">
+                <div class="device__button" style="visibility: hidden; opacity: 0; right: calc(50% - 0.5rem);"></div>
+            </div>
+        </div>
+        <div class="device__stand">
+            <div class="device__partOne" style="transform: matrix(1, 0, 0, 1, 0, 35);"></div>
+            <div class="device__partTwo" style="width: 0px;"></div>
+        </div>
+    </div>
+</div>
+<script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script>'use strict';
+
+//152,218 - 233,299 - 400,309
+var ratio = [];
+var ratioDesktop = [//PC
+{ width: 152, height: 218 }, //MOBILE
+{ width: 233, height: 299 }, //TABLET
+{ width: 360, height: 259 }],
+    //PC
+ratioMobile = [//MOBILE
+{ width: 110, height: 178 }, //MOBILE
+{ width: 170, height: 216 }, //TABLET
+{ width: 291, height: 225 }],
+    //PC
+fontBase = 16,
+    bounceValue = 2,
+    waitTime = 1,
+    body = document.querySelector('.device__body'),
+    dots = [].concat(document.querySelectorAll('.device__dot')),
+    button = document.querySelector('.device__button'),
+    standPartOne = document.querySelector('.device__partOne'),
+    standPartTwo = document.querySelector('.device__partTwo'),
+    tlMain = new TimelineMax({ repeat: -1, repeatDelay: .5, yoyo: true, paused: false });
+// tlMain = new TimelineMax({paused: true});
+function font_rem(size) {
+    return size / fontBase;
+}
+window.innerWidth <= 400 ? ratio = ratioMobile : ratio = ratioDesktop;
+
+tlMain.set(button, { autoAlpha: 0 })
+// .fromTo(body, .3, {scale: 0}, {scale: 1, ease: Power4.easeInOut})
+.to(body, .7, { //MOBILE
+    css: {
+        'flex-basis': font_rem(ratio[0].height) + 'rem',
+        width: font_rem(ratio[0].width) + 'rem'
+    }, ease: Back.easeInOut.config(bounceValue)
+}, '+=' + waitTime).to(button, .3, { autoAlpha: 1 }, '-=' + waitTime / 2).to(body, .5, { //TABLET
+    css: {
+        'flex-basis': font_rem(ratio[1].height) + 'rem',
+        width: ratio[1].width
+    }, ease: Back.easeInOut.config(bounceValue)
+}, '+=' + waitTime).to(body, .5, { //PC
+    css: {
+        'flex-basis': font_rem(ratio[2].height) + 'rem',
+        width: ratio[2].width
+    }, ease: Back.easeInOut.config(bounceValue)
+}, '+=' + waitTime).fromTo(button, .3, { right: 'calc(50% - .5rem)' }, { right: 'calc(5% - .5rem)' }, '-=.3').to(standPartOne, .5, { y: 23 / 16 + 'rem', ease: Back.easeOut.config(bounceValue * 1.8) }).to(standPartTwo, .5, { width: 136 / 16 + 'rem', ease: Back.easeOut.config(bounceValue) }, '-=.2').staggerTo(dots, .5, { scale: 1, ease: Back.easeOut.config(bounceValue) }, .1, '-=.2');
+tlMain.timeScale(.7);
+//# sourceURL=pen.js
+</script>
+</body>
+</html>

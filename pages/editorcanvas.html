@@ -1,0 +1,175 @@
+<html class="">
+
+<head>
+    <script src="//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js"></script>
+    <script src="//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js"></script>
+    <script src="//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js"></script>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+    <link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+    <link rel="canonical" href="https://codepen.io/mikemang/pen/MpzmEv">
+
+
+    <style class="cp-pen-styles">
+        body {
+            background: #71CDF4;
+        }
+
+        .bounce-enter-active {
+            animation: bounce-in .5s;
+        }
+
+        .bounce-leave-active {
+            animation: bounce-out .5s;
+        }
+
+        @keyframes bounce-in {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounce-out {
+            0% {
+                transform-origin: center;
+                transform: scale(1);
+            }
+            50% {
+                transform-origin: center;
+                transform: scale(1.5);
+            }
+            100% {
+                transform-origin: center;
+                transform: scale(0);
+            }
+        }
+
+        .Close {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"><svg viewBox="0 0 842 596" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4"><path fill="#71cdf4" d="M0 0h842v595.3H0z" class="Wall"></path><path d="M0 387l274-245.4 11 311-160.8 142.7H0V387z" fill-opacity=".2" class="Shadow"></path><g class="Canvas"><path fill="#2878b9" d="M274 141.6H568v311H274z"></path><path fill="#1d5b8a" d="M274 141.6h11v311h-11z"></path></g> <g class="Editor"><g class="Console"><path fill="#1e1e1e" d="M318.3 225.5h17.3v143.2h-17.3z"></path><path fill="#414141" d="M335.6 225.5h188v143.2h-188z"></path></g><path fill="#e6e6e6" d="M318.3 225.5h205.3v12H318.3z" class="Top-Bar"></path><ellipse cx="327" cy="231.6" rx="3.3" ry="3" fill="#ef4e4e" class="Close"></ellipse><ellipse cx="335.6" cy="231.6" rx="3.3" ry="3" fill="#facc39"></ellipse><ellipse cx="344.3" cy="231.6" rx="3.3" ry="3" fill="#7cc241"></ellipse><path fill="#17b66d" d="M343 249.6h93v6.3h-93z" class="Green-Line-1" data-svg-origin="343 249.60000610351562" transform="matrix(0.55,0,0,1,154.35,0)"></path><path fill="#17b66d" d="M343 304.8h71.3v6.3H343z" class="Green-Line-2" data-svg-origin="343 304.79998779296875" transform="matrix(0.75,0,0,1,85.75,0)"></path><path fill="#17b66d" d="M423.6 304.8h51.2v6.3h-51.2z" class="Green-Line-3" data-svg-origin="423.6000061035156 304.79998779296875" transform="matrix(1,0,0,1,-10,0)"></path><path fill="#d76a41" d="M343 320.2h101v6H343z" class="Red-Line-3" data-svg-origin="343 320.20001220703125" transform="matrix(0.91966,0,0,1,27.556345599999986,0)"></path><path fill="#edbe2a" d="M343 277h93v6.4h-93z" class="Yellow-Line-1" data-svg-origin="343 277" transform="matrix(0.85,0,0,1,51.44999999999999,0)"></path><path fill="#edbe2a" d="M343 332.7h93v6.3h-93z" class="Yellow-Line-2" data-svg-origin="343 332.70001220703125" transform="matrix(1,0,0,1,0,0)"></path><path fill="#edbe2a" d="M447 332.7h65v6.3h-65z" class="Yellow-Line-3" data-svg-origin="447 332.70001220703125" transform="matrix(0.8,0,0,1,89.39999999999998,0)"></path><path fill="#25a9fc" d="M343 291.6h147.7v6.3H343z" class="Blue-Line-1" data-svg-origin="343 291.6000061035156" transform="matrix(1.09344,0,0,1,-32.05211520000006,0)"></path><path fill="#25a9fc" d="M343 345.8h147.7v6.3H343z" class="Blue-Line-2" data-svg-origin="343 345.79998779296875" transform="matrix(1,0,0,1,23.361599999999996,0)"></path><path fill="#d76a41" d="M343 262h46.5v6.7H343z" class="Red-Line-1" data-svg-origin="343 262" transform="matrix(0.61225,0,0,1,132.9950943999999,0)"></path><path fill="#d76a41" d="M399.7 262h46.5v6.7h-46.5z" class="Red-Line-2" data-svg-origin="399.70001220703125 262" transform="matrix(1,0,0,1,25,0)"></path><path fill="#d76a41" d="M451.4 319.7H498v6.6h-46.6z" class="Red-Line-4" data-svg-origin="451.3999938964844 319.70001220703125" transform="matrix(1,0,0,1,-3.6892799999999966,0)"></path></g> <g class="Stand"><g class="Top"><path fill="#eed2a0" d="M372.6 121.6h96.7v20h-96.7zM382 105.5h78v16h-78z"></path><path fill="#ebca92" d="M372.6 121.6h10.8v20h-10.8zM382 105.5h8.7v16H382z"></path><path fill="#eed2a0" d="M412.5 63h17v42.5h-17z"></path><path fill="#ebca92" d="M412.5 63h4.5v42.5h-4.5z"></path></g><g class="Base"><path fill="#eed2a0" d="M285 489.2h46.2v106h-46zM519.5 489.2h46v106h-46z"></path><path fill="#ebca92" d="M285 489.2h23.2v106h-23zM519.5 489.2h23v106h-23z"></path><path fill="#eed2a0" d="M240.3 425h378.2v64.2H240.3z"></path><path fill="#ebca92" d="M240.3 425H366v64.2H240.4z"></path></g></g></svg></div>
+    <script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                editor: true
+            },
+            methods: {
+                closeEditor: function() {
+                    this.editor = false
+                }
+            }
+        })
+
+        var timeline = new TimelineMax({
+            yoyo: true,
+            repeat: -1
+        });
+
+        //set labels
+        timeline.add('change');
+        timeline.add('revert');
+
+        //Green Lines
+        timeline.to('.Green-Line-1', 1, {
+            scaleX: 1.5
+        }, "change");
+        timeline.to('.Green-Line-1', 1, {
+            scaleX: 0.55
+        }, "revert+=1");
+        timeline.to('.Green-Line-2', 1, {
+            scaleX: 1.5
+        }, "change");
+        timeline.to('.Green-Line-3', 1, {
+            x: 40
+        }, "change");
+        timeline.to('.Green-Line-2', 1, {
+            scaleX: 0.75
+        }, "revert+=1");
+        timeline.to('.Green-Line-3', 1, {
+            x: -10
+        }, "revert+=1");
+
+        //Red Lines
+        timeline.to('.Red-Line-1', 1, {
+            scaleX: 1.5
+        }, "change2-=1");
+        timeline.to('.Red-Line-1', 1, {
+            scaleX: 0.55
+        }, "revert2+=1");
+        timeline.to('.Red-Line-2', 1, {
+            x: 25
+        }, "change2-=1");
+        timeline.to('.Red-Line-3', 1, {
+            scaleX: 1.2
+        }, "change2-=1");
+        timeline.to('.Red-Line-2', 1, {
+            x: -5
+        }, "revert2+=2");
+        timeline.to('.Red-Line-3', 1, {
+            scaleX: 0.9
+        }, "revert2+=1");
+        timeline.fromTo('.Red-Line-4', 1, {
+            x: 20
+        }, {
+            x: 15
+        }, "change2-=1");
+        timeline.to('.Red-Line-4', 1, {
+            x: -5
+        }, "revert2+=1");
+
+        //Blue Lines
+        timeline.to('.Blue-Line-1', 1, {
+            scaleX: 1.1
+        }, "change3-=2");
+        timeline.to('.Blue-Line-1', 1, {
+            scaleX: 0.35
+        }, "revert3+=2");
+        timeline.to('.Blue-Line-2', 1, {
+            x: 25
+        }, "change3-=2");
+        timeline.to('.Blue-Line-2', 1, {
+            scaleX: 0.5,
+            x: 0
+        }, "revert3+=2");
+
+        //Yellow Lines
+        timeline.to('.Yellow-Line-1', 1, {
+            scaleX: 1.4
+        }, "change");
+        timeline.to('.Yellow-Line-1', 1, {
+            scaleX: 0.85
+        }, "revert+=1");
+        timeline.to('.Yellow-Line-3', 1, {
+            x: 5,
+            scaleX: 1.1
+        }, "change");
+        timeline.to('.Yellow-Line-3', 1, {
+            x: 0,
+            scaleX: 0.8
+        }, "revert+=1");
+        timeline.to('.Yellow-Line-2', 1, {
+            x: 5
+        }, "change");
+        timeline.to('.Yellow-Line-2', 1, {
+            x: 0
+        }, "revert+=1");
+        //# sourceURL=pen.js
+    </script>
+</body>
+
+</html>
