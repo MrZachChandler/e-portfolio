@@ -19,9 +19,11 @@
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" rel="stylesheet" />
+  <script src="https://cdn-webgl.wrld3d.com/wrldjs/dist/latest/wrld.js"></script>
 
   <!-- Custom styles for this template -->
-  <link href="css/agency.min.css" rel="stylesheet">
+  <link href="css/agency.css" rel="stylesheet">
 
 </head>
 
@@ -56,15 +58,26 @@
       </div>
     </div>
   </nav>
+  <div style="position: relative">
+  <div id="map" style="height: 400px"></div>
+  <script>
+    var map = L.Wrld.map("map", "4e99e7b72d8b297edb2d682fabfc8005", {
+      center: [37.7858, -122.401],
+      zoom: 16
+    });
+  </script>
 
+</div>
   <!-- Header -->
-  <header class="masthead">
-    <div class="container">
+  <header class="masthead" >
+
+    <div class="container" >
       <div class="intro-text">
         <div class="intro-lead-in">Welcome To my Portfolio!!</div>
         <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Get Started</a>
       </div>
+      <!-- </div> -->
     </div>
   </header>
 
@@ -543,7 +556,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
-
 </body>
 
 </html>
