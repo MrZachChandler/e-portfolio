@@ -1,24 +1,5 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <script src="https://cdn-webgl.wrld3d.com/wrldjs/dist/latest/wrld.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" rel="stylesheet" />
-  </head>
 
-  <body>
-  <div style="position: relative">
-    <div id="map" style="height: 100vh"></div>
-    <script>
-      var map = L.Wrld.map("map", "4e99e7b72d8b297edb2d682fabfc8005", {
-        center: [33.760682, -84.387302],
-        zoom: 16
-      });
-    </script>
-
-  </div>
-  </body>
-</html>
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -51,8 +32,12 @@
 <body >
 
   <div id="map" style="height: 100vh"></div>
-  <script>L.Wrld.map("map", "4e99e7b72d8b297edb2d682fabfc8005");</script>
-
+  <script>
+    var map = L.Wrld.map("map", "4e99e7b72d8b297edb2d682fabfc8005", {
+      center: [33.760682, -84.387302],
+      zoom: 16
+    });
+  </script>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -68,4 +53,4 @@
   <script src="js/agency.min.js"></script>
 </body>
 
-</html> -->
+</html>
