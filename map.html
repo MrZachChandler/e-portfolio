@@ -35,10 +35,13 @@
   <script>
     var map = L.Wrld.map("map", "4e99e7b72d8b297edb2d682fabfc8005", {
       center: [33.760682, -84.387302],
-      zoom: 16
-
+      zoom: 16,
+      bearing: 53.3,
+      distance: 1920.0
     });
+
     map.themes.setTime(L.Wrld.themes.time.Night)
+
     var weathers = [L.Wrld.themes.weather.Clear, L.Wrld.themes.weather.Overcast, L.Wrld.themes.weather.Rainy, L.Wrld.themes.weather.Snowy];
       var weatherIndex = 2;
       setInterval(function() {
